@@ -1,0 +1,48 @@
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #1e2696, #4f6da0, #c7d2e0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1000;
+}
+
+.image-logo {
+  width: 50px;
+  height: 50px;
+
+}
+
+.image-logo img {
+  width: 200%;
+  height: 200%;
+  position: relative;
+  bottom: 100%;
+  left: 55%;
+
+}
+
+.logo-name img {
+  width: 150px;
+  height: auto;
+
+}
+
+
+
+.name-container {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+
+}

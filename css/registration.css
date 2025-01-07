@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #3b82f6, #eff6ff);
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom, #3b82f6, #1e40af);
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.left-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fff;
+    color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background: #eff6ff;
+}
+
+.right-section {
+    flex: 2;
+    padding: 40px;
+}
+
+.form-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.form-step {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-step.active {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-btn,
+.submit-btn {
+    background: #2563eb;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.prev-btn {
+    background: #d1d5db;
+    color: #000;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+    background: #1e3a8a;
+}
+
+.prev-btn:hover {
+    background: #9ca3af;
+}
+.modal-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-box .fa-circle-check {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.modal-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-box h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.modal-box .buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-box .close-btn {
+    background: #1a3e9a;
+    color: #fff;
+}
+.profile-section {
+    flex: 1 1 35%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.profile-pic {
+    position: relative;
+    bottom: 55%;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    
+    background-color: #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: #0056b3 solid 5px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;        
+    margin-top: 20px;     
+}  
+
+button.prev-btn, button.next-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button.prev-btn:hover, button.next-btn:hover {
+    background-color: #0056b3;
+}
+
+button.prev-btn i, button.next-btn i {
+    pointer-events: none;
+}
+

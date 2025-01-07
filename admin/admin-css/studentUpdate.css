@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+header nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #c0392b;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    border: 2px solid #0056b3;
+}
+
+.profile-picture .edit-btn {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.profile-info h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+}
+
+/* Password Toggle */
+#togglePassword {
+    color: #0056b3;
+}
+
+#togglePassword:hover {
+    color: #003d82;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+header nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    border: 2px solid #c0392b;
+}
+
+.profile-picture .edit-btn {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.profile-info h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-green {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+}
+
+/* Password Toggle */
+#togglePassword {
+    color: #0056b3;
+}
+
+#togglePassword:hover {
+    color: #003d82;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.post-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-user-info strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.post-user-info span {
+    font-size: 12px;
+    color: #888;
+}
+
+.delete-container {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.delete-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+/* Post content */
+.post-content {
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.post-media img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Post footer */
+.post-footer {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.comment-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+
+.comment-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Actions (like and comment) */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-button,
+.comment-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-button:hover,
+.comment-button:hover {
+    color: #3498db;
+}
+
+.like-count,
+.comment-count {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Comments section */
+.comments {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background: #f7f7f7;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comment .profile-pic {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.comment strong {
+    color: #333;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post {
+        margin: 10px;
+    }
+
+    .post-header,
+    .post-footer,
+    .comments {
+        padding: 10px;
+    }
+
+    .comment-form textarea {
+        font-size: 13px;
+    }
+
+    .comment-form button {
+        font-size: 13px;
+    }
+}
